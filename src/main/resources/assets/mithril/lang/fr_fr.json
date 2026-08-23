@@ -1,0 +1,19 @@
+{
+  "block.mithril.mithril_block": "Bloc de Mithril",
+  "block.mithril.mithril_ore": "Minerai de Mithril",
+  "block.mithril.raw_mithril_block": "Bloc de Mithril Brut",
+  "item.mithril.mithril_ingot": "Lingot de Mithril",
+  "item.mithril.raw_mithril": "Mithril Brut",
+  "item.mithril.mithril_nugget": "Pépite de Mithril",
+  "item.mithril.ender_template": "Modèle de Raffinement",
+  "item.mithril.mithril_sword": "Épée de Mithril",
+  "item.mithril.mithril_pickaxe": "Pioche de Mithril",
+  "item.mithril.mithril_axe": "Hache de Mithril",
+  "item.mithril.mithril_shovel": "Pelle de Mithril",
+  "item.mithril.mithril_hoe": "Hou de Mithril",
+  "item.mithril.mithril_helmet": "Casque de Mithril",
+  "item.mithril.mithril_chestplate": "Plastron de Mithril",
+  "item.mithril.mithril_leggings": "Jambières de Mithril",
+  "item.mithril.mithril_boots": "Bottes de Mithril",
+  "itemgroup.mithril.mithril": "Mithril"
+}

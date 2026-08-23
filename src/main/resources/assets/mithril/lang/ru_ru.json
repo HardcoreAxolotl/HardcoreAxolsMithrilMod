@@ -1,0 +1,19 @@
+{
+  "block.mithril.mithril_block": "Блок Митрила",
+  "block.mithril.mithril_ore": "Руда Митрила",
+  "block.mithril.raw_mithril_block": "Блок сырого Митрила",
+  "item.mithril.mithril_ingot": "Слиток Митрила",
+  "item.mithril.raw_mithril": "Сырой Митрил",
+  "item.mithril.mithril_nugget": "Самородок Митрила",
+  "item.mithril.ender_template": "Шаблон Очистки",
+  "item.mithril.mithril_sword": "Митриловый Меч",
+  "item.mithril.mithril_pickaxe": "Митриловая Кирка",
+  "item.mithril.mithril_axe": "Митриловый Топор",
+  "item.mithril.mithril_shovel": "Митриловая Лопата",
+  "item.mithril.mithril_hoe": "Митриловая Мотыга",
+  "item.mithril.mithril_helmet": "Митриловый Шлем",
+  "item.mithril.mithril_chestplate": "Митриловый Нагрудник",
+  "item.mithril.mithril_leggings": "Митриловые Поножи",
+  "item.mithril.mithril_boots": "Митриловые Ботинки",
+  "itemgroup.mithril.mithril": "Митрил"
+}

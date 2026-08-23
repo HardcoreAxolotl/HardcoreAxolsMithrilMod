@@ -1,0 +1,19 @@
+{
+  "block.mithril.mithril_block": "Mithrilblok",
+  "block.mithril.mithril_ore": "Mithrilerts",
+  "block.mithril.raw_mithril_block": "Blok van Ruwe Mithril",
+  "item.mithril.mithril_ingot": "Mithril Staf",
+  "item.mithril.raw_mithril": "Ruwe Mithril",
+  "item.mithril.mithril_nugget": "Mithril Brok",
+  "item.mithril.ender_template": "Verfijnings Sjabloon",
+  "item.mithril.mithril_sword": "Mithril Zwaard",
+  "item.mithril.mithril_pickaxe": "Mithril Pikhouweel",
+  "item.mithril.mithril_axe": "Mithril Bijl",
+  "item.mithril.mithril_shovel": "Mithril Schep",
+  "item.mithril.mithril_hoe": "Mithril Hark",
+  "item.mithril.mithril_helmet": "Mithril Helm",
+  "item.mithril.mithril_chestplate": "Mithril Borstplaat",
+  "item.mithril.mithril_leggings": "Mithril Broek",
+  "item.mithril.mithril_boots": "Mithril Laarzen",
+  "itemgroup.mithril.mithril": "Mithril"
+}

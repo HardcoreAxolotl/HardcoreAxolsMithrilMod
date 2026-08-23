@@ -1,0 +1,19 @@
+{
+  "block.mithril.mithril_block": "Mithrilblock",
+  "block.mithril.mithril_ore": "Mithril-Erz",
+  "block.mithril.raw_mithril_block": "Block aus rohem Mithril",
+  "item.mithril.mithril_ingot": "Mithrilbarren",
+  "item.mithril.raw_mithril": "Rohes Mithril",
+  "item.mithril.mithril_nugget": "Mithrilsplitter",
+  "item.mithril.ender_template": "Veredelungsvorlage",
+  "item.mithril.mithril_sword": "Mithrilschwert",
+  "item.mithril.mithril_pickaxe": "Mithrilspitzhacke",
+  "item.mithril.mithril_axe": "Mithrilaxt",
+  "item.mithril.mithril_shovel": "Mithrilspaten",
+  "item.mithril.mithril_hoe": "Mithrilhacke",
+  "item.mithril.mithril_helmet": "Mithrilhelm",
+  "item.mithril.mithril_chestplate": "Mithrilbrustplatte",
+  "item.mithril.mithril_leggings": "Mithrilbeinschützer",
+  "item.mithril.mithril_boots": "Mithrilstiefel",
+  "itemgroup.mithril.mithril": "Mithril"
+}

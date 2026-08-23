@@ -1,0 +1,19 @@
+{
+  "block.mithril.mithril_block": "秘银块",
+  "block.mithril.mithril_ore": "秘银矿石",
+  "block.mithril.raw_mithril_block": "生秘银块",
+  "item.mithril.mithril_ingot": "秘银锭",
+  "item.mithril.raw_mithril": "生秘银",
+  "item.mithril.mithril_nugget": "秘银碎块",
+  "item.mithril.ender_template": "精炼模板",
+  "item.mithril.mithril_sword": "秘银剑",
+  "item.mithril.mithril_pickaxe": "秘银镐",
+  "item.mithril.mithril_axe": "秘银斧",
+  "item.mithril.mithril_shovel": "秘银铲",
+  "item.mithril.mithril_hoe": "秘银锄",
+  "item.mithril.mithril_helmet": "秘银头盔",
+  "item.mithril.mithril_chestplate": "秘银胸甲",
+  "item.mithril.mithril_leggings": "秘银护腿",
+  "item.mithril.mithril_boots": "秘银靴",
+  "itemgroup.mithril.mithril": "秘银"
+}

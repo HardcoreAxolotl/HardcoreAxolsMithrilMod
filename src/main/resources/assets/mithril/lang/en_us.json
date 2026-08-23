@@ -1,0 +1,27 @@
+{
+  "mithril.configuration.title": "HardcoreAxolsMithrilMod Configs",
+  "mithril.configuration.section.mithril.common.toml": "HardcoreAxolsMithrilMod Configs",
+  "mithril.configuration.section.mithril.common.toml.title": "HardcoreAxolsMithrilMod Configs",
+  "mithril.configuration.items": "Item List",
+  "mithril.configuration.logDirtBlock": "Log Dirt Block",
+  "mithril.configuration.magicNumberIntroduction": "Magic Number Text",
+  "mithril.configuration.magicNumber": "Magic Number",
+
+  "block.mithril.mithril_block": "Mithril Block",
+  "block.mithril.mithril_ore": "Mithril Ore",
+  "block.mithril.raw_mithril_block": "Block of Raw Mithril",
+  "item.mithril.mithril_ingot": "Mithril Ingot",
+  "item.mithril.raw_mithril": "Raw Mithril",
+  "item.mithril.mithril_nugget": "Mithril Nugget",
+  "item.mithril.ender_template": "Refining Template",
+  "item.mithril.mithril_sword": "Mithril Sword",
+  "item.mithril.mithril_pickaxe": "Mithril Pickaxe",
+  "item.mithril.mithril_axe": "Mithril Axe",
+  "item.mithril.mithril_shovel": "Mithril Shovel",
+  "item.mithril.mithril_hoe": "Mithril Hoe",
+  "item.mithril.mithril_helmet": "Mithril Helmet",
+  "item.mithril.mithril_chestplate": "Mithril Chestplate",
+  "item.mithril.mithril_leggings": "Mithril Leggings",
+  "item.mithril.mithril_boots": "Mithril Boots",
+  "itemgroup.mithril.mithril": "Mithril"
+}

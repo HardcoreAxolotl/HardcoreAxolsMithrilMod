@@ -1,0 +1,19 @@
+{
+  "block.mithril.mithril_block": "Blok Mithrilu",
+  "block.mithril.mithril_ore": "Ruda Mithrilu",
+  "block.mithril.raw_mithril_block": "Blok Surowego Mithrilu",
+  "item.mithril.mithril_ingot": "Sztabka Mithrilu",
+  "item.mithril.raw_mithril": "Surowy Mithril",
+  "item.mithril.mithril_nugget": "Bryłka Mithrilu",
+  "item.mithril.ender_template": "Szablon Rafiningu",
+  "item.mithril.mithril_sword": "Miecz Mithrilu",
+  "item.mithril.mithril_pickaxe": "Kilof Mithrilu",
+  "item.mithril.mithril_axe": "Topór Mithrilu",
+  "item.mithril.mithril_shovel": "Łopata Mithrilu",
+  "item.mithril.mithril_hoe": "Motyka Mithrilu",
+  "item.mithril.mithril_helmet": "Hełm Mithrilu",
+  "item.mithril.mithril_chestplate": "Napierśnik Mithrilu",
+  "item.mithril.mithril_leggings": "Nogawice Mithrilu",
+  "item.mithril.mithril_boots": "Buty Mithrilu",
+  "itemgroup.mithril.mithril": "Mithril"
+}

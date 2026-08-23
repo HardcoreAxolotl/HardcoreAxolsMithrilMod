@@ -1,0 +1,4 @@
+Copyright (c) 2026 RoboticAxolotl. All rights reserved.
+
+No part of this project may be copied, distributed, or modified in any
+form or by any means without the prior written permission of the copyright owner.
