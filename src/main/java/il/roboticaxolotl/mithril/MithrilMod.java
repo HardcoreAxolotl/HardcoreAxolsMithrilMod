@@ -3,8 +3,6 @@ package il.roboticaxolotl.mithril;
 import il.roboticaxolotl.mithril.blocks.ModBlocks;
 import il.roboticaxolotl.mithril.creativetabs.ModCreativeTabs;
 import il.roboticaxolotl.mithril.items.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;

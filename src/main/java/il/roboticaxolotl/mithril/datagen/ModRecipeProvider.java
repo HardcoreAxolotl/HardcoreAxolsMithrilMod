@@ -1,6 +1,5 @@
 package il.roboticaxolotl.mithril.datagen;
 
-import il.roboticaxolotl.mithril.MithrilMod;
 import il.roboticaxolotl.mithril.blocks.ModBlocks;
 import il.roboticaxolotl.mithril.items.ModItems;
 import net.minecraft.core.HolderLookup;
@@ -8,7 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.neoforged.neoforge.common.data.BlockTagsProvider;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -23,7 +22,7 @@ public class ModRecipeProvider extends RecipeProvider {
         }
 
         @Override
-        protected RecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
+        protected @NonNull RecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
             return new ModRecipeProvider(provider, recipeOutput);
         }
 
