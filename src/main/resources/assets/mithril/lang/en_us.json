@@ -2,10 +2,9 @@
   "mithril.configuration.title": "HardcoreAxolsMithrilMod Configs",
   "mithril.configuration.section.mithril.common.toml": "HardcoreAxolsMithrilMod Configs",
   "mithril.configuration.section.mithril.common.toml.title": "HardcoreAxolsMithrilMod Configs",
-  "mithril.configuration.items": "Item List",
-  "mithril.configuration.logDirtBlock": "Log Dirt Block",
-  "mithril.configuration.magicNumberIntroduction": "Magic Number Text",
-  "mithril.configuration.magicNumber": "Magic Number",
+  "mithril.configuration.spawn": "Spawn Mithril",
+  "mithril.configuration.max_ore_spawn_height": "Max mithril spawn height",
+  "mithril.configuration.min_ore_spawn_height": "Min mithril spawn height",
 
   "block.mithril.mithril_block": "Mithril Block",
   "block.mithril.mithril_ore": "Mithril Ore",
@@ -23,5 +22,6 @@
   "item.mithril.mithril_chestplate": "Mithril Chestplate",
   "item.mithril.mithril_leggings": "Mithril Leggings",
   "item.mithril.mithril_boots": "Mithril Boots",
-  "itemgroup.mithril.mithril": "Mithril"
+  "itemgroup.mithril.mithril_tab": "Mithril",
+  "creativetab.mithril.name": "Mithril Mod"
 }
