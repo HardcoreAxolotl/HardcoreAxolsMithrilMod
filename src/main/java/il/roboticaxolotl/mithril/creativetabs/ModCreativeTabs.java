@@ -27,6 +27,13 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.MITHRIL_ORE);
                         output.accept(ModBlocks.MITHRIL_BLOCK);
                         output.accept(ModBlocks.RAW_MITHRIL_BLOCK);
+
+                        output.accept(ModItems.MITHRIL_SWORD);
+                        output.accept(ModItems.MITHRIL_PICKAXE);
+                        output.accept(ModItems.MITHRIL_AXE);
+                        output.accept(ModItems.MITHRIL_SHOVEL);
+                        output.accept(ModItems.MITHRIL_HOE);
+                        output.accept(ModItems.MITHRIL_SPEAR);
                     })
                     .build());
 
