@@ -1,0 +1,9 @@
+{
+  "asset_name": "mithril",
+  "description": {
+    "translate": "trim_material.mithril.mithril"
+  },
+  "override_armor_assets": {
+    "minecraft:netherite": "mithril_darker"
+  }
+}

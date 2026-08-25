@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "raw_mithril_block",
+  "key": {
+    "A": "mithril:raw_mithril"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "mithril:raw_mithril_block"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#mithril:mithril_tool_materials",
+  "base": "minecraft:netherite_leggings",
+  "result": {
+    "id": "mithril:mithril_leggings"
+  },
+  "template": "mithril:mithril_upgrade_smithing_template"
+}

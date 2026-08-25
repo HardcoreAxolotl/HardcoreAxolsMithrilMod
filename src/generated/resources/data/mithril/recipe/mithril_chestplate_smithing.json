@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#mithril:mithril_tool_materials",
+  "base": "minecraft:netherite_chestplate",
+  "result": {
+    "id": "mithril:mithril_chestplate"
+  },
+  "template": "mithril:mithril_upgrade_smithing_template"
+}
