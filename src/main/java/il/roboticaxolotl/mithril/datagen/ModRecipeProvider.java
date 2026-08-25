@@ -45,11 +45,7 @@ public class ModRecipeProvider extends RecipeProvider {
     protected void buildRecipes() {
         // block up (9 ingots -> block)
         shaped(RecipeCategory.MISC, ModBlocks.MITHRIL_BLOCK.get())
-                .unlockedBy(getHasName(ModItems.RAW_MITHRIL.get()), has(ModItems.RAW_MITHRIL))
-                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT))
-                .unlockedBy(getHasName(ModItems.MITHRIL_NUGGET.get()), has(ModItems.MITHRIL_NUGGET))
-                .unlockedBy(getHasName(ModBlocks.RAW_MITHRIL_BLOCK.get()), has(ModBlocks.RAW_MITHRIL_BLOCK))
-                .unlockedBy(getHasName(ModBlocks.MITHRIL_BLOCK.get()), has(ModBlocks.MITHRIL_BLOCK))
+                .unlockedBy("has_mithril", has(ModTags.Items.MITHRIL_ITEMS))
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
@@ -59,11 +55,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
         // ingot up (9 nuggets -> ingot)
         shaped(RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.RAW_MITHRIL.get()), has(ModItems.RAW_MITHRIL))
-                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT))
-                .unlockedBy(getHasName(ModItems.MITHRIL_NUGGET.get()), has(ModItems.MITHRIL_NUGGET))
-                .unlockedBy(getHasName(ModBlocks.RAW_MITHRIL_BLOCK.get()), has(ModBlocks.RAW_MITHRIL_BLOCK))
-                .unlockedBy(getHasName(ModBlocks.MITHRIL_BLOCK.get()), has(ModBlocks.MITHRIL_BLOCK))
+                .unlockedBy("has_mithril", has(ModTags.Items.MITHRIL_ITEMS))
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
@@ -73,11 +65,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
         // raw block up
         shaped(RecipeCategory.MISC, ModBlocks.RAW_MITHRIL_BLOCK.get())
-                .unlockedBy(getHasName(ModItems.RAW_MITHRIL.get()), has(ModItems.RAW_MITHRIL))
-                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT))
-                .unlockedBy(getHasName(ModItems.MITHRIL_NUGGET.get()), has(ModItems.MITHRIL_NUGGET))
-                .unlockedBy(getHasName(ModBlocks.RAW_MITHRIL_BLOCK.get()), has(ModBlocks.RAW_MITHRIL_BLOCK))
-                .unlockedBy(getHasName(ModBlocks.MITHRIL_BLOCK.get()), has(ModBlocks.MITHRIL_BLOCK))
+                .unlockedBy("has_mithril", has(ModTags.Items.MITHRIL_ITEMS))
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
@@ -87,37 +75,26 @@ public class ModRecipeProvider extends RecipeProvider {
 
         // block down (block -> 9 ingots)
         shapeless(RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 9)
-                .unlockedBy(getHasName(ModItems.RAW_MITHRIL.get()), has(ModItems.RAW_MITHRIL))
-                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT))
-                .unlockedBy(getHasName(ModItems.MITHRIL_NUGGET.get()), has(ModItems.MITHRIL_NUGGET))
-                .unlockedBy(getHasName(ModBlocks.RAW_MITHRIL_BLOCK.get()), has(ModBlocks.RAW_MITHRIL_BLOCK))
-                .unlockedBy(getHasName(ModBlocks.MITHRIL_BLOCK.get()), has(ModBlocks.MITHRIL_BLOCK))
+                .unlockedBy("has_mithril", has(ModTags.Items.MITHRIL_ITEMS))
                 .requires(ModBlocks.MITHRIL_BLOCK.get())
                 .group("mithril")
                 .save(output, "mithril:mithril_block_mithril_ingot");
 
         // ingot down (block -> 9 ingots)
         shapeless(RecipeCategory.MISC, ModItems.MITHRIL_NUGGET.get(), 9)
-                .unlockedBy(getHasName(ModItems.RAW_MITHRIL.get()), has(ModItems.RAW_MITHRIL))
-                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT))
-                .unlockedBy(getHasName(ModItems.MITHRIL_NUGGET.get()), has(ModItems.MITHRIL_NUGGET))
-                .unlockedBy(getHasName(ModBlocks.RAW_MITHRIL_BLOCK.get()), has(ModBlocks.RAW_MITHRIL_BLOCK))
-                .unlockedBy(getHasName(ModBlocks.MITHRIL_BLOCK.get()), has(ModBlocks.MITHRIL_BLOCK))
+                .unlockedBy("has_mithril", has(ModTags.Items.MITHRIL_ITEMS))
                 .requires(ModItems.MITHRIL_INGOT.get())
                 .group("mithril")
                 .save(output, "mithril:mithril_ingot_mithril_nugget");
 
         // raw block down
         shapeless(RecipeCategory.MISC, ModItems.RAW_MITHRIL.get(), 9)
-                .unlockedBy(getHasName(ModItems.RAW_MITHRIL.get()), has(ModItems.RAW_MITHRIL))
-                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT))
-                .unlockedBy(getHasName(ModItems.MITHRIL_NUGGET.get()), has(ModItems.MITHRIL_NUGGET))
-                .unlockedBy(getHasName(ModBlocks.RAW_MITHRIL_BLOCK.get()), has(ModBlocks.RAW_MITHRIL_BLOCK))
-                .unlockedBy(getHasName(ModBlocks.MITHRIL_BLOCK.get()), has(ModBlocks.MITHRIL_BLOCK))
+                .unlockedBy("has_mithril", has(ModTags.Items.MITHRIL_ITEMS))
                 .requires(ModBlocks.RAW_MITHRIL_BLOCK.get())
                 .group("raw_mithril")
                 .save(output, "mithril:raw_mithril_block_raw_mithril");
 
+        // Tools
         mithrilSmithing(Items.NETHERITE_SWORD, RecipeCategory.COMBAT, ModItems.MITHRIL_SWORD.get());
         mithrilSmithing(Items.NETHERITE_PICKAXE, RecipeCategory.COMBAT, ModItems.MITHRIL_PICKAXE.get());
         mithrilSmithing(Items.NETHERITE_AXE, RecipeCategory.COMBAT, ModItems.MITHRIL_AXE.get());
@@ -125,24 +102,14 @@ public class ModRecipeProvider extends RecipeProvider {
         mithrilSmithing(Items.NETHERITE_HOE, RecipeCategory.COMBAT, ModItems.MITHRIL_HOE.get());
         mithrilSmithing(Items.NETHERITE_SPEAR, RecipeCategory.COMBAT, ModItems.MITHRIL_SPEAR.get());
 
-        List<ItemLike> MITHRIL_SMELTABLES = List.of(ModItems.RAW_MITHRIL, ModBlocks.MITHRIL_ORE);
-        oreSmelting(MITHRIL_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.25f, 300, "mithril");
-        oreBlasting(MITHRIL_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.25f, 150, "mithril");
-        oreSmelting(List.of(ModItems.MITHRIL_INGOT), RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.MITHRIL_NUGGET.get(), 0.25f, 300, "mithril_nugget");
-        oreBlasting(List.of(ModItems.MITHRIL_INGOT), RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.MITHRIL_NUGGET.get(), 0.25f, 150, "mithril_nugget");
+        // Armor
+        mithrilSmithing(Items.NETHERITE_HELMET,     RecipeCategory.COMBAT,  ModItems.MITHRIL_HELMET.get());
+        mithrilSmithing(Items.NETHERITE_CHESTPLATE, RecipeCategory.COMBAT,  ModItems.MITHRIL_CHESTPLATE.get());
+        mithrilSmithing(Items.NETHERITE_LEGGINGS,   RecipeCategory.COMBAT,  ModItems.MITHRIL_LEGGINGS.get());
+        mithrilSmithing(Items.NETHERITE_BOOTS,      RecipeCategory.COMBAT,  ModItems.MITHRIL_BOOTS.get());
     }
 
     protected void mithrilSmithing(Item base, RecipeCategory category, Item result) {
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.ENDER_TEMPLATE), Ingredient.of(base), this.tag(ModTags.Items.MITHRIL_TOOL_MATERIALS), category, result).unlocks("has_mithril_ingot", this.has(ModTags.Items.MITHRIL_TOOL_MATERIALS)).save(this.output, MithrilMod.MOD_ID + ":" + getItemName(result) + "_smithing");
-    }
-
-    @Override
-    protected <T extends AbstractCookingRecipe> void oreCooking(AbstractCookingRecipe.Factory<T> factory, List<ItemLike> smeltables,
-                                                                RecipeCategory craftingCategory, CookingBookCategory cookingCategory, ItemLike result,
-                                                                float experience, int cookingTime, String group, String fromDesc) {
-        for(ItemLike itemlike : smeltables) {
-            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), craftingCategory, cookingCategory, result, experience, cookingTime, factory).group(group).unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(output, MithrilMod.MOD_ID + ":" + getItemName(result) + fromDesc + "_" + getItemName(itemlike));
-        }
     }
 }

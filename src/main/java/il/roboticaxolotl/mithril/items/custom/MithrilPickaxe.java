@@ -1,4 +1,4 @@
-package il.roboticaxolotl.mithril.items;
+package il.roboticaxolotl.mithril.items.custom;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.Item;

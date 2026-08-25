@@ -1,11 +1,8 @@
 package il.roboticaxolotl.mithril;
 
-import il.roboticaxolotl.mithril.datagen.ModBlockLootTableProvider;
-import il.roboticaxolotl.mithril.datagen.ModBlockTagsProvider;
-import il.roboticaxolotl.mithril.datagen.ModItemTagsProvider;
-import il.roboticaxolotl.mithril.datagen.ModModelProvider;
-import il.roboticaxolotl.mithril.datagen.ModRecipeProvider;
+import il.roboticaxolotl.mithril.datagen.*;
 import il.roboticaxolotl.mithril.worldgen.ModDatapackProvider;
+
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -33,5 +30,6 @@ public class MithrilModDataGen {
 
         generator.addProvider(true, new ModRecipeProvider.Runner(output, lookupProvider));
         generator.addProvider(true, new ModDatapackProvider(output, lookupProvider));
+        generator.addProvider(true, new ModEquipmentAssetProvider(output));
     }
 }

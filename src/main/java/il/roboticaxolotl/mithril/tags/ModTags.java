@@ -21,6 +21,8 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> MITHRIL_REPAIRABLE = CreateTag("mithril_repairable");
         public static final TagKey<Item> MITHRIL_TOOL_MATERIALS = CreateTag("mithril_tool_materials");
+        public static final TagKey<Item> REPAIRS_MITHRIL_ARMOR = CreateTag("repairs_mithril_armor");
+        public static final TagKey<Item> MITHRIL_ITEMS = CreateTag("mithril_items");
 
         private static TagKey<Item> CreateTag(String name) {
             return ItemTags.create(Identifier.fromNamespaceAndPath(MithrilMod.MOD_ID, name));

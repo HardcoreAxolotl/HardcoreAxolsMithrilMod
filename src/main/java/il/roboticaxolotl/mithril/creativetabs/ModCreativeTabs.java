@@ -34,6 +34,11 @@ public class ModCreativeTabs {
                         output.accept(ModItems.MITHRIL_SHOVEL);
                         output.accept(ModItems.MITHRIL_HOE);
                         output.accept(ModItems.MITHRIL_SPEAR);
+
+                        output.accept(ModItems.MITHRIL_HELMET);
+                        output.accept(ModItems.MITHRIL_CHESTPLATE);
+                        output.accept(ModItems.MITHRIL_LEGGINGS);
+                        output.accept(ModItems.MITHRIL_BOOTS);
                     })
                     .build());
 

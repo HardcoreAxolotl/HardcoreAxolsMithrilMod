@@ -1,4 +1,4 @@
-package il.roboticaxolotl.mithril.items;
+package il.roboticaxolotl.mithril.items.custom;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
