@@ -80,6 +80,10 @@ public class ModEquipmentAssetProvider implements DataProvider {
         // The game appends "_1" and "_2" suffixes for the two armor model layers.
         output.accept(ModEquipmentAssets.MITHRIL, EquipmentClientInfo.builder()
                         .addHumanoidLayers(Identifier.fromNamespaceAndPath(MithrilMod.MOD_ID, "mithril"), false)
+                        .addLayers(EquipmentClientInfo.LayerType.HORSE_BODY,
+                                new EquipmentClientInfo.Layer(Identifier.fromNamespaceAndPath(MithrilMod.MOD_ID, "mithril")))
+                        .addLayers(EquipmentClientInfo.LayerType.NAUTILUS_BODY,
+                                new EquipmentClientInfo.Layer(Identifier.fromNamespaceAndPath(MithrilMod.MOD_ID, "mithril")))
                 .build());
     }
 

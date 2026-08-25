@@ -23,7 +23,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.ENDER_TEMPLATE);
                         output.accept(ModItems.MITHRIL_INGOT);
                         output.accept(ModItems.MITHRIL_NUGGET);
-                        output.accept(ModItems.RAW_MITHRIL);
+                        output.accept(ModItems.RAW_MITHRIL_ALLOY);
+                        output.accept(ModItems.MITHRIL_POWDER);
                         output.accept(ModBlocks.MITHRIL_ORE);
                         output.accept(ModBlocks.MITHRIL_BLOCK);
                         output.accept(ModBlocks.RAW_MITHRIL_BLOCK);
@@ -39,6 +40,9 @@ public class ModCreativeTabs {
                         output.accept(ModItems.MITHRIL_CHESTPLATE);
                         output.accept(ModItems.MITHRIL_LEGGINGS);
                         output.accept(ModItems.MITHRIL_BOOTS);
+
+                        output.accept(ModItems.MITHRIL_HORSE_ARMOR);
+                        output.accept(ModItems.MITHRIL_NAUTILUS_ARMOR);
                     })
                     .build());
 

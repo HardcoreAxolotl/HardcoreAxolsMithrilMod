@@ -19,9 +19,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         // Recipe Tags
         tag(ModTags.Items.MITHRIL_ITEMS)
-                .add(ModItems.RAW_MITHRIL.get())
+                .add(ModItems.RAW_MITHRIL_ALLOY.get())
                 .add(ModItems.MITHRIL_INGOT.get())
                 .add(ModItems.MITHRIL_NUGGET.get())
+                .add(ModItems.MITHRIL_POWDER.get())
                 .add(ModBlocks.RAW_MITHRIL_BLOCK.get().asItem())
                 .add(ModBlocks.MITHRIL_BLOCK.get().asItem());
 

@@ -5,19 +5,13 @@ import il.roboticaxolotl.mithril.blocks.ModBlocks;
 import il.roboticaxolotl.mithril.items.ModItems;
 import il.roboticaxolotl.mithril.tags.ModTags;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.data.BlockFamily;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.AbstractCookingRecipe;
-import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
 import org.jspecify.annotations.NonNull;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends RecipeProvider {
@@ -69,7 +63,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
-                .define('A', ModItems.RAW_MITHRIL.get())
+                .define('A', ModItems.RAW_MITHRIL_ALLOY.get())
                 .group("raw_mithril_block")
                 .save(output, "mithril:raw_mithril_raw_mithril_block");
 
@@ -88,25 +82,37 @@ public class ModRecipeProvider extends RecipeProvider {
                 .save(output, "mithril:mithril_ingot_mithril_nugget");
 
         // raw block down
-        shapeless(RecipeCategory.MISC, ModItems.RAW_MITHRIL.get(), 9)
+        shapeless(RecipeCategory.MISC, ModItems.RAW_MITHRIL_ALLOY.get(), 9)
                 .unlockedBy("has_mithril", has(ModTags.Items.MITHRIL_ITEMS))
                 .requires(ModBlocks.RAW_MITHRIL_BLOCK.get())
                 .group("raw_mithril")
                 .save(output, "mithril:raw_mithril_block_raw_mithril");
 
+        // craft raw mithril
+        shapeless(RecipeCategory.MISC, ModItems.RAW_MITHRIL_ALLOY.get(), 1)
+                .unlockedBy("has_mithril", has(ModTags.Items.MITHRIL_ITEMS))
+                .requires(Items.RAW_GOLD,2)
+                .requires(ModItems.MITHRIL_POWDER.get(),2)
+                .group("raw_mithril")
+                .save(output, "mithril:get_raw_mithril");
+
         // Tools
-        mithrilSmithing(Items.NETHERITE_SWORD, RecipeCategory.COMBAT, ModItems.MITHRIL_SWORD.get());
+        mithrilSmithing(Items.NETHERITE_SWORD,   RecipeCategory.COMBAT, ModItems.MITHRIL_SWORD.get());
         mithrilSmithing(Items.NETHERITE_PICKAXE, RecipeCategory.COMBAT, ModItems.MITHRIL_PICKAXE.get());
-        mithrilSmithing(Items.NETHERITE_AXE, RecipeCategory.COMBAT, ModItems.MITHRIL_AXE.get());
-        mithrilSmithing(Items.NETHERITE_SHOVEL, RecipeCategory.COMBAT, ModItems.MITHRIL_SHOVEL.get());
-        mithrilSmithing(Items.NETHERITE_HOE, RecipeCategory.COMBAT, ModItems.MITHRIL_HOE.get());
-        mithrilSmithing(Items.NETHERITE_SPEAR, RecipeCategory.COMBAT, ModItems.MITHRIL_SPEAR.get());
+        mithrilSmithing(Items.NETHERITE_AXE,     RecipeCategory.COMBAT, ModItems.MITHRIL_AXE.get());
+        mithrilSmithing(Items.NETHERITE_SHOVEL,  RecipeCategory.COMBAT, ModItems.MITHRIL_SHOVEL.get());
+        mithrilSmithing(Items.NETHERITE_HOE,     RecipeCategory.COMBAT, ModItems.MITHRIL_HOE.get());
+        mithrilSmithing(Items.NETHERITE_SPEAR,   RecipeCategory.COMBAT, ModItems.MITHRIL_SPEAR.get());
 
         // Armor
         mithrilSmithing(Items.NETHERITE_HELMET,     RecipeCategory.COMBAT,  ModItems.MITHRIL_HELMET.get());
         mithrilSmithing(Items.NETHERITE_CHESTPLATE, RecipeCategory.COMBAT,  ModItems.MITHRIL_CHESTPLATE.get());
         mithrilSmithing(Items.NETHERITE_LEGGINGS,   RecipeCategory.COMBAT,  ModItems.MITHRIL_LEGGINGS.get());
         mithrilSmithing(Items.NETHERITE_BOOTS,      RecipeCategory.COMBAT,  ModItems.MITHRIL_BOOTS.get());
+
+        // Animal Armor
+        mithrilSmithing(Items.NETHERITE_HORSE_ARMOR,    RecipeCategory.COMBAT,  ModItems.MITHRIL_HORSE_ARMOR.get());
+        mithrilSmithing(Items.NETHERITE_NAUTILUS_ARMOR, RecipeCategory.COMBAT,  ModItems.MITHRIL_NAUTILUS_ARMOR.get());
     }
 
     protected void mithrilSmithing(Item base, RecipeCategory category, Item result) {

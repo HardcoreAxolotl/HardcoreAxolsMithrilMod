@@ -73,7 +73,11 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.ENDER_TEMPLATE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.MITHRIL_INGOT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.MITHRIL_NUGGET.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.RAW_MITHRIL.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.RAW_MITHRIL_ALLOY.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.MITHRIL_POWDER.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModels.generateFlatItem(ModItems.MITHRIL_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.MITHRIL_NAUTILUS_ARMOR.get(), ModelTemplates.FLAT_ITEM);
 
         // `generateFlatItem()` with FLAT_HANDHELD gives a slightly different transform (held in hand like a tool).
         itemModels.generateFlatItem(ModItems.MITHRIL_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -82,24 +86,6 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.MITHRIL_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.MITHRIL_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateSpear(ModItems.MITHRIL_SPEAR.get());
-
-        // =====================================================================
-        // STEP 2: Register mithril armor models with dynamic trim support
-        // =====================================================================
-        // IMPORTANT: We need TWO registrations per armor piece:
-        //
-        // (a) `createFlatItemModel()` - Creates the BASE model JSON that defines the
-        //     texture layer (e.g. mithril_helmet.json with "layer0": "mithril:item/mithril_helmet").
-        //     This is the untrimmed appearance of the item.
-        //     We use `createFlatItemModel()` (not `generateFlatItem()`) because
-        //     generateFlatItem() ALSO registers an item definition, which would conflict
-        //     with the trimmable item definition we register next.
-        //
-        // (b) `generateDynamicTrimmableItem()` - Creates the ITEM DEFINITION that tells
-        //     the game to use the `neoforge:trimmed_armor` model type at runtime.
-        //     This wraps the base model and dynamically overlays the trim texture.
-        //     The trim overlay texture path is: "trims/items/<slot>_trim_<material_suffix>"
-        //     e.g. "trims/items/helmet_trim_mithril" for mithril on a helmet.
 
         itemModels.createFlatItemModel(ModItems.MITHRIL_HELMET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.createFlatItemModel(ModItems.MITHRIL_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
@@ -110,27 +96,6 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateDynamicTrimmableItem(ModItems.MITHRIL_CHESTPLATE.get(), ItemModelGenerators.TRIM_PREFIX_CHESTPLATE);
         itemModels.generateDynamicTrimmableItem(ModItems.MITHRIL_LEGGINGS.get(), ItemModelGenerators.TRIM_PREFIX_LEGGINGS);
         itemModels.generateDynamicTrimmableItem(ModItems.MITHRIL_BOOTS.get(), ItemModelGenerators.TRIM_PREFIX_BOOTS);
-
-        // =====================================================================
-        // STEP 3: Override ALL vanilla armor item models to support custom trims
-        // =====================================================================
-        // Vanilla uses `generateTrimmableItem()` which creates a `minecraft:select`
-        // model with hardcoded cases for only 11 vanilla materials. Any custom material
-        // (like mithril) falls through to the fallback (untrimmed) model, making the
-        // trim overlay invisible in inventory.
-        //
-        // By calling `generateDynamicTrimmableItem()` for each vanilla armor piece,
-        // we REPLACE their item definitions with `neoforge:trimmed_armor` models
-        // that dynamically resolve ANY trim material at runtime.
-        //
-        // Note: This generates files under `assets/minecraft/items/` (not `assets/mithril/items/`)
-        // because the items themselves are in the minecraft namespace.
-
-        // --- Leather Armor ---
-        // Leather armor needs special handling: it has a default tint color (-6265536 = 0xFFA0654F)
-        // because leather color is applied dynamically via the dye component.
-        // The 3-parameter overload `generateDynamicTrimmableItem(item, prefix, color)` passes
-        // this default color so the item renders with the leather brown tint when undyed.
 
         itemModels.generateDynamicTrimmableItem(Items.LEATHER_HELMET, ItemModelGenerators.TRIM_PREFIX_HELMET, -6265536);
         itemModels.generateDynamicTrimmableItem(Items.LEATHER_CHESTPLATE, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, -6265536);

@@ -3,7 +3,7 @@
   "category": "misc",
   "group": "raw_mithril_block",
   "key": {
-    "A": "mithril:raw_mithril"
+    "A": "mithril:raw_mithril_alloy"
   },
   "pattern": [
     "AAA",

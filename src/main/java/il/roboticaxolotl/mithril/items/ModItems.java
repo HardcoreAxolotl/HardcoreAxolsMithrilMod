@@ -104,7 +104,8 @@ public class ModItems {
     public static final DeferredItem<Item> MITHRIL_INGOT = ITEMS.registerSimpleItem("mithril_ingot",
             props -> props.fireResistant().trimMaterial(ModTrimMaterials.MITHRIL));
     public static final DeferredItem<Item> MITHRIL_NUGGET = ITEMS.registerSimpleItem("mithril_nugget", Item.Properties::fireResistant);
-    public static final DeferredItem<Item> RAW_MITHRIL = ITEMS.registerSimpleItem("raw_mithril", Item.Properties::fireResistant);
+    public static final DeferredItem<Item> RAW_MITHRIL_ALLOY = ITEMS.registerSimpleItem("raw_mithril_alloy", Item.Properties::fireResistant);
+    public static final DeferredItem<Item> MITHRIL_POWDER = ITEMS.registerSimpleItem("mithril_powder", Item.Properties::fireResistant);
 
     // =====================================================================
     // SMITHING TEMPLATE
@@ -184,6 +185,12 @@ public class ModItems {
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.MITHRIL, ArmorType.LEGGINGS).fireResistant()));
     public static final DeferredItem<Item> MITHRIL_BOOTS = ITEMS.registerItem("mithril_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.MITHRIL, ArmorType.BOOTS).fireResistant()));
+
+    public static final DeferredItem<Item> MITHRIL_HORSE_ARMOR = ITEMS.registerItem("mithril_horse_armor",
+            properties -> new Item(properties.horseArmor(ModArmorMaterials.MITHRIL).fireResistant()));
+
+    public static final DeferredItem<Item> MITHRIL_NAUTILUS_ARMOR = ITEMS.registerItem("mithril_nautilus_armor",
+            properties -> new Item(properties.nautilusArmor(ModArmorMaterials.MITHRIL).fireResistant()));
 
     public static void register(IEventBus event_bus) {
         ITEMS.register(event_bus);

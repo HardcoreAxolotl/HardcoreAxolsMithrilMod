@@ -1,8 +1,9 @@
 {
   "values": [
-    "mithril:raw_mithril",
+    "mithril:raw_mithril_alloy",
     "mithril:mithril_ingot",
     "mithril:mithril_nugget",
+    "mithril:mithril_powder",
     "mithril:raw_mithril_block",
     "mithril:mithril_block"
   ]

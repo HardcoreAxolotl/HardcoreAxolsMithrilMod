@@ -1,5 +1,10 @@
 {
   "layers": {
+    "horse_body": [
+      {
+        "texture": "mithril:mithril"
+      }
+    ],
     "humanoid": [
       {
         "texture": "mithril:mithril"
@@ -11,6 +16,11 @@
       }
     ],
     "humanoid_leggings": [
+      {
+        "texture": "mithril:mithril"
+      }
+    ],
+    "nautilus_body": [
       {
         "texture": "mithril:mithril"
       }
