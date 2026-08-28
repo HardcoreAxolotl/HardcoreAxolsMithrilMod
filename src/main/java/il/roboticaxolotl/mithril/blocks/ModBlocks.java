@@ -17,7 +17,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> MITHRIL_ORE = registerBlock("mithril_ore",
             properties -> new Block(properties
-                    .strength(60.f)
+                    .strength(30.f)
                     .explosionResistance(1500.f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)
             )
@@ -25,7 +25,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> MITHRIL_BLOCK = registerBlock("mithril_block",
             properties -> new Block(properties
-                    .strength(60.f)
+                    .strength(300.f)
                     .explosionResistance(1500.f)
                     .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)
             )
@@ -33,7 +33,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> RAW_MITHRIL_BLOCK = registerBlock("raw_mithril_block",
             properties -> new Block(properties
-                    .strength(50.f)
+                    .strength(40.f)
                     .explosionResistance(1200.f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)
             )

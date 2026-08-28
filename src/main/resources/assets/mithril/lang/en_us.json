@@ -29,5 +29,9 @@
   "item.mithril.mithril_nautilus_armor": "Mithril Nautilus Armor",
   "itemgroup.mithril.mithril_tab": "Mithril",
   "creativetab.mithril.name": "Mithril Mod",
-  "trim_material.mithril.mithril": "Mithril Material"
+  "trim_material.mithril.mithril": "Mithril Material",
+  "advancements.mithrilmod.mithril_powder.title": "Mithril?",
+  "advancements.mithrilmod.mithril_powder.description": "Mithril? I barely know her!",
+  "advancements.mithrilmod.mithril_ingot.title": "Finally... Mithril!",
+  "advancements.mithrilmod.mithril_ingot.description": "Obtain Mithril Ingot."
 }

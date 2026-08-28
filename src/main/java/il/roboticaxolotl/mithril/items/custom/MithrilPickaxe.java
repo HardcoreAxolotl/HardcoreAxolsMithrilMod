@@ -16,7 +16,7 @@ public class MithrilPickaxe extends Item {
     public float getDestroySpeed(ItemStack itemStack, BlockState state) {
         Tool tool = (Tool)itemStack.get(DataComponents.TOOL);
 
-        if (state.getBlock() == Blocks.DEEPSLATE) {
+        if (state.getBlock() == Blocks.DEEPSLATE || state.getBlock() == Blocks.END_STONE) {
             return tool != null ? 40.f : 1.0F;
         }
         return tool != null ? tool.getMiningSpeed(state) : 1.0F;

@@ -45,7 +45,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 (LootPoolEntryContainer.Builder<?>)this.applyExplosionDecay(
                         block,
                         LootItem.lootTableItem(ModItems.MITHRIL_POWDER)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
                                 .apply(ApplyBonusCount.addUniformBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE)))
                 )
         );

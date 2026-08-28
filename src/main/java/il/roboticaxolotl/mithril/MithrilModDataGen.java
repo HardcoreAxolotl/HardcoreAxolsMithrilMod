@@ -31,5 +31,6 @@ public class MithrilModDataGen {
         generator.addProvider(true, new ModRecipeProvider.Runner(output, lookupProvider));
         generator.addProvider(true, new ModDatapackProvider(output, lookupProvider));
         generator.addProvider(true, new ModEquipmentAssetProvider(output));
+        generator.addProvider(true, new ModAdvancements(output, lookupProvider));
     }
 }
