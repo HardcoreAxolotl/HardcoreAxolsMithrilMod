@@ -31,7 +31,11 @@
   "creativetab.mithril.name": "Mithril Mod",
   "trim_material.mithril.mithril": "Mithril Material",
   "advancements.mithrilmod.mithril_powder.title": "Mithril?",
-  "advancements.mithrilmod.mithril_powder.description": "Mithril? I barely know her!",
+  "advancements.mithrilmod.mithril_powder.description": "Obtain Mithril Powder",
   "advancements.mithrilmod.mithril_ingot.title": "Finally... Mithril!",
-  "advancements.mithrilmod.mithril_ingot.description": "Obtain Mithril Ingot."
+  "advancements.mithrilmod.mithril_ingot.description": "Obtain Mithril Ingot.",
+  "advancements.mithrilmod.cover_me_with_mithril.title": "Cover Me in Powder",
+  "advancements.mithrilmod.cover_me_with_mithril.description": "Get a full suit of Mithril armor",
+  "advancements.mithrilmod.mithril_hoe.title": "A True Farmer",
+  "advancements.mithrilmod.mithril_hoe.description": "Use a Mithril Ingot to upgrade a Hoe, and then stand proud... for you are a true farmer!"
 }
